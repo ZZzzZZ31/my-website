@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodpanda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background-color: #f72d66;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        header img {
+            height: 50px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #ff4d88;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .order-btn {
+            background-color: #f72d66;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .order-btn:hover {
+            background-color: #d91c55;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .menu-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+        }
+        .menu-item h4 {
+            margin: 0 0 5px 0;
+            color: #f72d66;
+        }
+        footer {
+            background-color: #f72d66;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .menu-item {
+                width: 100%;
+            }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header h1 {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="foodpanda-logo.jpg" alt="Foodpanda Logo">
+    <h1>Foodpanda Delivery</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Foodpanda is your one-stop platform for ordering food from your favorite local restaurants. Fast, affordable, and always delicious!</p>
+    <button class="order-btn" onclick="alert('Redirecting to order page...')">Order Now</button>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <h4>Cheese Burger</h4>
+            <p>Juicy beef patty with cheddar and special sauce.</p>
+            <p><strong>RM 12.90</strong></p>
+        </div>
+        <div class="menu-item">
+            <h4>Chicken Biryani</h4>
+            <p>Fragrant basmati rice with tender chicken.</p>
+            <p><strong>RM 15.50</strong></p>
+        </div>
+        <div class="menu-item">
+            <h4>Sushi Platter</h4>
+            <p>Fresh assorted sushi, wasabi & soy sauce.</p>
+            <p><strong>RM 22.00</strong></p>
+        </div>
+        <div class="menu-item">
+            <h4>Boba Milk Tea</h4>
+            <p>Sweet milk tea with chewy tapioca pearls.</p>
+            <p><strong>RM 8.90</strong></p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@foodpanda.com</p>
+    <p>Phone: +60 123-456-789</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Foodpanda Malaysia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
